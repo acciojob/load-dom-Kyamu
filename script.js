@@ -1,3 +1,6 @@
 //your JS code here. If required.
-var ans=document.body.innerContext="DOM load success";
-alert(ans);
+document.addEventListener("DOMContentLoaded", function() {
+            var message = document.createElement("p");
+            message.textContent = "DOM load success";
+            document.body.appendChild(message);
+        });
